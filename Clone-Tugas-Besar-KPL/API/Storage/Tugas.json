@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "Judul": "Judul tugas 1",
+    "Deadline": "2026-08-09T00:00:00",
+    "Status": 2,
+    "Kategori": 0
+  },
+  {
+    "Id": 2,
+    "Judul": "Judul tugas 2",
+    "Deadline": "2025-07-01T00:41:32.901Z",
+    "Status": 0,
+    "Kategori": 1
+  },
+  {
+    "Id": 3,
+    "Judul": "Judul tugas 3",
+    "Deadline": "2025-07-01T00:41:32.901Z",
+    "Status": 0,
+    "Kategori": 1
+  },
+  {
+    "Id": 4,
+    "Judul": "Judul tugas 4",
+    "Deadline": "2025-07-01T01:25:19.327Z",
+    "Status": 1,
+    "Kategori": 0
+  },
+  {
+    "Id": 5,
+    "Judul": "Judul tugas 5",
+    "Deadline": "2025-07-01T01:29:56.297Z",
+    "Status": 0,
+    "Kategori": 0
+  },
+  {
+    "Id": 6,
+    "Judul": "Judul tugas 6",
+    "Deadline": "2025-07-01T05:43:23.317Z",
+    "Status": 1,
+    "Kategori": 0
+  },
+  {
+    "Id": 7,
+    "Judul": "Judul tugas 7",
+    "Deadline": "2025-07-04T00:00:00",
+    "Status": 0,
+    "Kategori": 0
+  },
+  {
+    "Id": 8,
+    "Judul": "Judul tugas 8",
+    "Deadline": "2025-07-20T00:00:00",
+    "Status": 0,
+    "Kategori": 0
+  },
+  {
+    "Id": 9,
+    "Judul": "Judul tugas 9",
+    "Deadline": "2025-07-30T16:03:42.962Z",
+    "Status": 1,
+    "Kategori": 1
+  },
+  {
+    "Id": 10,
+    "Judul": "Judul tugas 10",
+    "Deadline": "2025-07-20T00:00:00",
+    "Status": 1,
+    "Kategori": 0
+  }
+]

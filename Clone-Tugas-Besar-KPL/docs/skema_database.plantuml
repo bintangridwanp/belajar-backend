@@ -1,0 +1,30 @@
+@startuml
+entity "Tugas" as T {
+  * id : int <<PK>>
+  --
+  judul : string
+  deadline : datetime
+  status : string
+  kategori : string
+}
+
+entity "Konfigurasi" as K {
+  * key : string <<PK>>
+  value : string
+}
+
+entity "Statistik" as S {
+  * id : int <<PK>>
+  jumlah_selesai : int
+  jumlah_belum : int
+  jumlah_overdue : int
+}
+
+entity "Prioritas" as P {
+  * status : string <<PK>>
+  warna : string
+  urutan_prioritas : int
+}
+
+T::status --> P::status
+@enduml

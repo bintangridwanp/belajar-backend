@@ -1,0 +1,17 @@
+{
+  "DefaultTask": {
+    "Judul": "Tugas Baru",
+    "DeadlineDaysFromNow": 7,
+    "Status": "BelumMulai",
+    "Kategori": "Akademik"
+  },
+  "ReminderSettings": {
+    "EnableReminders": true,
+    "DaysBeforeDeadline": 3
+  },
+  "OtherRuntimeParameters": {
+    "MaxTasksPerPage": 10,
+    "EnableLogging": true
+  }
+}
+
