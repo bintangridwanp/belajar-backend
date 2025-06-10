@@ -2,6 +2,7 @@
 {
     public class JsonToTextConverter
     {
+        
         public static string ConvertTasksToText(List<Tugas> tasks)
         {
             var textContent = "Daftar Tugas:\n";
@@ -14,7 +15,6 @@
                 string deadline = FormatDate(t.Deadline);
                 string status = t.Status.ToString();
 
-                // Add warning symbol for approaching deadlines
                 if (IsDeadlineApproaching(t.Deadline) && t.Status != StatusTugas.Selesai && t.Status != StatusTugas.Terlewat)
                 {
                     deadline += " ⚠️";
@@ -25,26 +25,18 @@
             textContent += "=================================================================================================\n";
             return textContent;
         }
-        
-        // Design by Contract: Precondition by bintang
+
         public static int DaysUntilDeadline(DateTime deadline)
         {
-            //Preconditions
             if (deadline < DateTime.Today)
-            {
-                Console.WriteLine($"[ERROR] Deadline tidak valid. Input: {deadline}");
                 throw new ArgumentException("Deadline tidak boleh di masa lalu", nameof(deadline));
-            }
 
             var today = DateTime.Today;
             var days = (int)Math.Ceiling((deadline.Date - today).TotalDays);
 
-            //Postconditions
             if (days < 0)
-            {
-                Console.WriteLine($"[ERROR] Hasil perhitungan tidak valid. Days: {days}");
                 throw new InvalidOperationException("Hasil perhitungan tidak valid.");
-            }
+
             return days;
         }
 
@@ -53,20 +45,12 @@
             var daysRemaining = DaysUntilDeadline(deadline);
             return daysRemaining >= 0 && daysRemaining <= 3;
         }
-        
-        public enum StatusTugas
-        {
-            BelumMulai = 0,
-            SedangDikerjakan = 1,
-            Selesai = 2,
-            Terlewat = 3
-        }
-        
+
         public static string FormatDate(DateTime date)
         {
             return date.ToString("dd MMMM yyyy");
         }
-        
+
         public class Tugas
         {
             public int Id { get; set; }
@@ -75,11 +59,20 @@
             public StatusTugas Status { get; set; }
             public KategoriTugas Kategori { get; set; }
         }
-        
+
+        public enum StatusTugas
+        {
+            BelumMulai = 0,
+            SedangDikerjakan = 1,
+            Selesai = 2,
+            Terlewat = 3
+        }
+
         public enum KategoriTugas
         {
             Akademik,
             NonAkademik
         }
+        
     }
 }
