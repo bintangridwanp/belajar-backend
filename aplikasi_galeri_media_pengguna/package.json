@@ -1,12 +1,22 @@
 {
   "dependencies": {
-    "@prisma/client": "^6.11.0",
+    "@prisma/client": "^6.11.1",
     "express": "^5.1.0",
     "multer": "^2.0.1",
     "mysql2": "^3.14.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10",
-    "prisma": "^6.11.0"
-  }
+    "prisma": "^6.11.1"
+  },
+  "name": "aplikasi_galeri_media_pengguna",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
